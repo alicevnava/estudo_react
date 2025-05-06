@@ -38,9 +38,9 @@ Este repositório contém meus estudos sobre React, com foco nos principais conc
 O projeto estará disponível em http://localhost:5173 🌍
 
 ## Tecnologias Utilizadas ⚛️
--# React: Biblioteca para construir interfaces de usuário. 🌱
--# Vite: Ferramenta de build para projetos JavaScript, que otimiza o processo de desenvolvimento. ⚡
--# JavaScript: Linguagem de programação utilizada no desenvolvimento. 💻
+-** React: Biblioteca para construir interfaces de usuário. 🌱
+-** Vite: Ferramenta de build para projetos JavaScript, que otimiza o processo de desenvolvimento. ⚡
+-** JavaScript: Linguagem de programação utilizada no desenvolvimento. 💻
 
 
 
