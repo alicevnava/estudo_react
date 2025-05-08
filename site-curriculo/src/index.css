@@ -1,0 +1,388 @@
+:root {
+  --home: #001427;
+  --about: #0d3051;
+  --skills: #29547b;
+  --contact: #537ea6;
+  --nav: #ededed;
+  --buttons: #9fa653;
+  --primary-text-color: #f4f1de;
+  --secondary-text-color: #b8d0f0;
+  --text-color: #333;
+  --border-radius-base: 8px;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+* {
+  font-family: "Rubik", serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ol, ul{
+  list-style: none;
+}
+
+nav {
+  background-color: var(--nav);
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 63px;
+  /* https://www.cssmatic.com/box-shadow */
+  box-shadow: 0px 4px 4px 0px #00000025;
+}
+#navLinks {
+  display: flex;
+
+  li {
+    padding-left: 73px;
+   
+     a{
+      color: var(--text-color);
+     }
+  }
+}
+section {
+  height: 100vh;
+  
+}
+
+/* home */
+#homeSection {
+  background-color: var(--home);
+  padding-top: 65px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.btnDownload {
+  background-color: var(--buttons);
+  display: flex;
+  align-items: center;
+  /* ocupa o espaço exato da div */
+  width: fit-content;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: var(--primary-text-color);
+  cursor: pointer;
+}
+
+#imgHome {
+  width: 50vw;
+  height: 100vh;
+  background-image: url("./assets/images/homeImg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#homeInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 200px;
+  justify-content: center;
+
+  h1 {
+    color: var(--primary-text-color);
+    font-size: 3.5rem;
+    text-transform: uppercase;
+  }
+  h2 {
+    color: var(--secondary-text-color);
+    font-size: 2.4rem;
+    font-weight: 400;
+    padding: 24px 0px 64px 0px;
+  }
+}
+
+/* sobre mim */
+#aboutSection {
+  background-color: var(--about);
+  display: flex;
+
+  #aboutInfo {
+    color: var(--primary-text-color);
+    width: 60vw;
+    padding-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+
+    #aboutInfoFlex {
+      width: 80%;
+    }
+  }
+
+  #imgAbout {
+    /* background-color: red; */
+    background-image: url("./assets/images/aboutimg.jpg");
+    width: 40vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  p {
+    color: var(--primary-text-color);
+    padding: 45px 0 56px 0;
+  }
+
+  h1 {
+    padding-bottom: 50px;
+    font-size: 3.125rem;
+    text-transform: uppercase;
+  }
+
+  .btnLinkedin {
+    padding: 14px;
+    background-color: var(--buttons);
+  }
+}
+
+/*skills  */
+#skillsSection {
+  background-image: url("./assets/images/skillsimg.jpg");
+  background-size: cover;
+
+  .overlay {
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff70;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    color: var(--text-color);
+    padding-bottom: 68px;
+    text-transform: uppercase;
+    font-size: 3.125rem;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    gap: 27px;
+    padding-bottom: 164px;
+    padding-top: 50px;
+  }
+
+  li {
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 10px 17px;
+    color: var(--primary-text-color);
+    border-radius: var(--border-radius-base);
+    font-size: 1.93rem;
+  }
+
+  .btnResume{
+    background-color: var(--buttons);
+  }
+}
+
+
+/* contato */
+#contactSection {
+  background-color: var(--contact);
+  display: flex;
+  
+  #contactInfo{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1{
+    padding-bottom: 60px;
+    text-decoration: underline;
+    font-size: 3.125rem;
+    color: var(--primary-text-color);
+  }
+
+  p{
+    color: var(--primary-text-color);
+    font-size: 1.56rem;
+    padding-bottom: 10px;
+  }
+
+  #contactInfoChild{
+    width: 80%;
+    max-width: 700px;
+  }
+
+  #contactPhoto{
+    background-image: url("./assets/images/contactImg.jpg");
+    width: 40vw;
+    background-size: cover;
+  }
+
+  .contactItem{
+    display: flex;
+
+    p{
+      padding-left: 5px;
+      padding-bottom: 15px;
+    }
+  }
+
+  a{
+    color: var(--primary-text-color);
+    padding: 4px;
+  }
+}
+
+
+
+.socialIcon {
+  width: 30px; 
+  height: auto; 
+}
+
+/* buttons */
+.defaultButton {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 8px 14px;
+  border-radius: var(--border-radius-base);
+  cursor: pointer;
+  box-shadow: 0px 13px 35px 1px rgba(0,0,0,0.75);
+}
+
+/* links */
+a {
+  padding-left: 11px;
+  color: white;
+  text-decoration: none;
+}
+
+
+/* responsividade */
+@media (orientation: portrait){
+  .title{
+    font-size: 2.6rem;
+  }
+
+  section{
+    min-height: 100vh;
+    height: fit-content;
+  }
+
+  #homeSection{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    h2{
+      font-size: 1.71rem;
+    }
+
+    #imgHome{
+      height: 30vh;
+      width: 30vh;
+      border-radius: 50%;
+      margin-bottom: 3.8rem;
+      
+    }
+
+
+    #homeInfo{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  /* #imgAbout{
+    display: none;
+  } */
+
+  #aboutSection{
+    #aboutInfo{
+      text-align: justify;
+      width: 100vw;
+      align-items: center;
+
+      #aboutInfoFlex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #contactPhoto {
+        display: none;
+      }
+
+      p{
+        font-size: 1.54rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1030px) {
+  #imgHome {
+    border-radius: 50%;
+    height: 40vh;
+    width: 40vh;
+    margin-bottom: 2rem;
+    margin-top: 4.375rem;
+  }
+
+  #homeSection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #homeInfo {
+    padding: 40px; 
+    align-items: center;
+  }
+}
+
+@media (max-width: 1030px) {
+  #contactPhoto {
+    display: none;
+  }
+
+  #contactSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #contactInfo {
+    width: 100vw;
+  }
+
+  #contactInfoChild {
+    align-items: center;
+  }
+}
+
+@media (max-width: 700px){
+  nav{
+    display: none;
+  }
+}
+
+/* os css podem ser criados em page e cada subpasta respectiva da página  */
+
+
