@@ -1,0 +1,45 @@
+/* estilos dos botões */
+:root {
+  --home: #001427;
+  --about: #0d3051;
+  --skills: #29547b;
+  --contact: #537ea6;
+  --nav: #ededed;
+  --buttons: #9fa653;
+  --primary-text-color: #f4f1de;
+  --secondary-text-color: #b8d0f0;
+  --text-color: #333;
+  --border-radius-base: 8px;
+}
+
+.defaultButton {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 8px 14px;
+  border-radius: var(--border-radius-base);
+  cursor: pointer;
+  box-shadow: 0px 13px 35px 1px rgba(0,0,0,0.75);
+}
+
+.btnDownload {
+  background-color: var(--buttons);
+  display: flex;
+  align-items: center;
+  /* ocupa o espaço exato da div */
+  width: fit-content;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: var(--primary-text-color);
+  cursor: pointer;
+}
+
+  .btnLinkedin {
+    padding: 14px;
+    background-color: var(--buttons);
+}
+
+  
+  .btnResume{
+    background-color: var(--buttons);
+}

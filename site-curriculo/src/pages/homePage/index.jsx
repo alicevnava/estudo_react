@@ -1,4 +1,6 @@
-import arrow from '../../assets/icons/arrow.svg';
+import downloadIcon from '../../assets/icons/download.svg'
+import Buttons from '../../components/Buttons';
+// import '../../components/Buttons/styles.css';
 
 const HomePage = () => (
 
@@ -7,10 +9,17 @@ const HomePage = () => (
     <div id="homeInfo">
       <h1 className="title">Alice Vivas Nava</h1>
       <h2>Desenvolvedora Front End</h2>
-      <div className="btnDownload defaultButton">
+      {/* <div className="btnDownload defaultButton">
         <img src={arrow} alt="Download" />
         <a href="./sources/curriculoAliceNava.pdf" download="curriculoAliceNava.pdf"> Baixar Currículo </a>
-      </div>
+      </div> */}
+      
+      {/* importar botão - passar props como atributos*/}
+      <Buttons
+        iconImage={downloadIcon}
+        btnColorClass="btnDownload">
+        Baixar Currículo
+      </Buttons>
     </div>
   </section>
 

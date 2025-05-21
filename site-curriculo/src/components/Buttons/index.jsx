@@ -1,12 +1,14 @@
-// props recebida como parâmetro: nome, background color
-const Buttons = (iconImage, bcgColor) => {
+import './styles.css';
+
+// props recebida como parâmetro: icone, background color dos botões
+const Buttons = ({iconImage, btnColorClass, children}) => {
     return (
         // home
         // className vira templateLiteral e qual classe quer receber de cor dinamicamente
-        <div className={` defaultButton ${bcgColor}`}>
+        <div className={`defaultButton ${btnColorClass}`}>
             {/* children - recebe de forma dinâmica, qual imagem deve colocar no botão */}
             <img src={iconImage} alt="Download" />
-            <a href="./sources/curriculoAliceNava.pdf" download="curriculoAliceNava.pdf"> Baixar Currículo </a>
+            <a href="./sources/curriculoAliceNava.pdf" download="curriculoAliceNava.pdf"> {children}</a>
         </div>
 
     )
